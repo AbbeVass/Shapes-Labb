@@ -4,7 +4,7 @@ import static org.junit.jupiter.api.Assertions.*;
 public class TestTriangle {
     @Test
     public void testSomeTriangle() {
-.
+
         //Värden
         double height = 3.00;
         double width = 4.00;
