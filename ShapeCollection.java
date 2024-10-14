@@ -13,7 +13,10 @@ public class ShapeCollection {
     }
 
     public double getTotalArea() {
-        // TODO: Skriv klart den här funktionen.
-        return 0.0;
+        double totalArea = 0;
+        for (Shape2D shape : shapes) {
+            totalArea += shape.getArea();
+        }
+        return totalArea;
     }
 }
