@@ -8,8 +8,9 @@ public class TestRectangle {
         double width = 20.0;
         double height = 10.0;
 
+        Rectangle rectangle = new Rectangle(width, height);
         // When
-        double area = width * height;
+        double area = rectangle.getArea();
 
         // Then
         // Expected area calculation:
@@ -26,8 +27,9 @@ public class TestRectangle {
         double width = 0.0;
         double height = 0.0;
 
+        Rectangle rectangle = new Rectangle(width, height);
         // When
-        double area = width * height;
+        double area = rectangle.getArea();
 
         // Then
         // Expected area calculation:
@@ -43,8 +45,9 @@ public class TestRectangle {
         double width = -50.0;
         double height = -80.0;
 
+        Rectangle rectangle = new Rectangle(width, height);
         // When
-        double area = width * height;
+        double area = rectangle.getArea();
 
         // Then
         // Expected area calculation:
@@ -60,8 +63,9 @@ public class TestRectangle {
         double width = 50.0;
         double height = -80.0;
 
+        Rectangle rectangle = new Rectangle(width, height);
         // When
-        double area = width * height;
+        double area = rectangle.getArea();
 
         // Then
         // Expected area calculation:
