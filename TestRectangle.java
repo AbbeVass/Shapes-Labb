@@ -55,7 +55,7 @@ public class TestRectangle {
         // Height = -80
         // Expected area = -50 * -80 = 4000
         double expectedArea = 4000.0; 
-        assertEquals(expectedArea, area, 0.001, "This area should be 4000cm");
+        assertEquals(expectedArea, area, 0.001, "This should work");
     }
     @Test
     public void testSomeOtherOtherOtherRectangle() {
@@ -73,6 +73,6 @@ public class TestRectangle {
         // Height = -80
         // Expected area = 50 * -80 = -4000
         double expectedArea = -4000.0; 
-        assertEquals(expectedArea, area, 0.001, "This area should be -4000cm");
+        assertEquals(expectedArea, area, 0.001, "Expect this won't not work");
     }
 }
