@@ -8,8 +8,9 @@ public class TestRectangle {
         double width = 20.0;
         double height = 10.0;
 
+        Rectangle rectangle = new Rectangle(width, height);
         // When
-        double area = width * height;
+        double area = rectangle.getArea();
 
         // Then
         // Expected area calculation:
@@ -26,8 +27,9 @@ public class TestRectangle {
         double width = 0.0;
         double height = 0.0;
 
+        Rectangle rectangle = new Rectangle(width, height);
         // When
-        double area = width * height;
+        double area = rectangle.getArea();
 
         // Then
         // Expected area calculation:
@@ -43,8 +45,9 @@ public class TestRectangle {
         double width = -50.0;
         double height = -80.0;
 
+        Rectangle rectangle = new Rectangle(width, height);
         // When
-        double area = width * height;
+        double area = rectangle.getArea();
 
         // Then
         // Expected area calculation:
@@ -52,7 +55,7 @@ public class TestRectangle {
         // Height = -80
         // Expected area = -50 * -80 = 4000
         double expectedArea = 4000.0; 
-        assertEquals(expectedArea, area, 0.001, "This area should be 4000cm");
+        assertEquals(expectedArea, area, 0.001, "This should work");
     }
     @Test
     public void testSomeOtherOtherOtherRectangle() {
@@ -60,8 +63,9 @@ public class TestRectangle {
         double width = 50.0;
         double height = -80.0;
 
+        Rectangle rectangle = new Rectangle(width, height);
         // When
-        double area = width * height;
+        double area = rectangle.getArea();
 
         // Then
         // Expected area calculation:
@@ -69,6 +73,6 @@ public class TestRectangle {
         // Height = -80
         // Expected area = 50 * -80 = -4000
         double expectedArea = -4000.0; 
-        assertEquals(expectedArea, area, 0.001, "This area should be -4000cm");
+        assertEquals(expectedArea, area, 0.001, "Expect this won't not work");
     }
 }
