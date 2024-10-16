@@ -15,7 +15,7 @@ public class Sphere extends Shape3D{
 
     @Override
     public double getVolume() {
-        double volume = (4/3 * Math.PI * (getRadius() * getRadius() * getRadius()));
+        double volume = (4 * Math.PI * (getRadius() * getRadius() * getRadius()) / 3);
         return volume;
     }
 }
