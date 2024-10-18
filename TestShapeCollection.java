@@ -2,6 +2,35 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 public class TestShapeCollection {
+
+    @Test
+    public void isAllCircles(){
+
+        // Given
+        ShapeCollection shapeCollection = new ShapeCollection();
+        Triangle triangle = new Triangle(5, 5);
+        Circle circle = new Circle(5);
+
+        // When 
+        shapeCollection.addShape(circle);
+        shapeCollection.addShape(triangle);
+
+        // Then
+        assertFalse(shapeCollection.isAllCircles());  
+
+    //För att testa två olika scenarion med samma funktion
+
+        //Given
+        ShapeCollection circleOnlyCollection = new ShapeCollection();
+        
+        //When
+        circleOnlyCollection.addShape(circle);
+        circleOnlyCollection.addShape(new Circle(10));
+
+        // Then
+        assertTrue(circleOnlyCollection.isAllCircles());
+    }
+
     @Test
     public void testEmptyCollection() {
         // Given

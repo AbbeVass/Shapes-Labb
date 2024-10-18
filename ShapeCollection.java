@@ -12,6 +12,18 @@ public class ShapeCollection {
         return shapes.size();
     }
 
+    public boolean isAllCircles() {
+        // Kontrollera om alla objekt i listan är av typen Circle
+        for (Shape2D shape : shapes) {
+            
+            // Om någon form inte är en Circle, returnera false
+            if (!(shape instanceof Circle)) {
+                return false;  
+            }
+        }
+        return true;  // Alla former är cirklar
+    }
+
     public double getTotalArea() {
         double totalArea = 0;
         for (Shape2D shape : shapes) {
